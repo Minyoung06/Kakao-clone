@@ -1,0 +1,33 @@
+<!--
+    <3-5>
+    block/inline-block/inline
+
+    block: 박스의 옆에 아무것도 허용하지 않음.즉 옆이 아닌 밑으로 위치하게 만듬
+    inline: 내가 작성한 컨텐츠 만큼의 스타일만 적용. 박스x.박스의 폭 길이 등 적용안됨.마치 텍스트처럼 적용됨
+    inline-block:inline과 같은 설정값 유지+박스형태 유지.즉 옆으로 놓을 수 있음
+
+    디폴트는 block
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Example</title>
+    <style>
+    .box{
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border:2px solid black;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+</body>
+</html>

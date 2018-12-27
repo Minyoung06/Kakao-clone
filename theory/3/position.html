@@ -1,0 +1,70 @@
+<!--
+    <3-6>
+    position
+    static-디폴트값/'element를 거기에 놓으면 거기에 있을 것 이다'
+    fixed:element가 그 위치에 오버랩해서 고정
+    absolute:fixed와 비슷하지만 스크롤하면 안보임/ html에서 해당 element의 reletive한 element를 살펴보고 상응해서 포지션 결정/
+             absolute를 부모 element에 상대적으로 사용하려면 부모 element에 relative를 설정해주면 child element는 부모 element 안에 위치
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body,html{
+            height: 100%;
+            margin:0;
+            padding:0;
+        }
+        body{
+            height: 400%;
+            background-color: red;
+        }
+      /*  Position Fixed
+        #boxOne{
+            height:300px;
+            width:300px;
+            background-color: yellow;
+            position:static;
+        }
+        #boxTwo{   
+            height: 300px;
+            width: 100%;
+            background-color: green;
+            position:fixed;
+            bottom:30%;
+            left:0;
+        }*/
+        .abs-box{
+            width:400px;
+            height: 400px;
+            background-color: yellow;
+            position:relative;
+        }
+        .abs-child{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+    <!-- Position Fixed
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div>
+    -->
+</body>
+</html>
