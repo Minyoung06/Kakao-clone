@@ -1,0 +1,57 @@
+<!--
+    <3-7>
+    flex
+    flex 이전의 문제점:많은 박스를 만들면 인라인-블록을 해도 밑으로 박스가 떨어진다
+    flex를 쓰기 위해 부모클래스가 필요.
+    부모클래스에 flex->칠드런 박스에 적용/박스에 flex->컨텐츠에 적용
+    flex-direction의 디폴트는 row/justify-content는 수평작용 align-items는 수직작용/
+                  column을 쓸 경우 반대로 해당됨.
+    창을 줄여도 창에 맞춱서 폭이 조정됨
+    flex-wrap의 디폴트는 no-wrap상태/ wrap상태에선 창을 줄여도 폭이 유지된다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <style>
+        html,body{
+            height:100%;
+        }
+        .father{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            flex-direction:row;
+            height: 100%;
+            flex-wrap:wrap;
+        }
+        .box{
+            background-color:red;
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
