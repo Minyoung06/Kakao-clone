@@ -1,0 +1,35 @@
+<!--
+    <3-9>
+    states
+    ex)색깔
+    hover-위에 커서를 올리면 색이 바뀜
+    active-클릭할때마다 색이 바뀜
+    focus가 가장 중요한 명령/hover해도 핑크로 바뀌지 않음
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS States</title>
+    <style>
+        .box{
+            background-color:red;
+            font-size:40px;
+        }
+        .box:hover{
+            background-color:pink;
+        }
+        .box:active{
+            background-color:green;
+        }
+        .box:focus{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <textarea class="box">lalalala</textarea>
+</body>
+</html>
