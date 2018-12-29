@@ -1,0 +1,49 @@
+<!--
+    <4-4>
+    animations
+    @keyframe:css로 하여금 애니메이션을 생성함을 알려줌
+    @keyframe 에니메이션이름{}
+    2가지 스텝이 필요->(1)from (2)to
+    또는 0%-50%-100% 등 원하는 스테이지 별로 변화를 줄 수 있음
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+            background-color:red;
+            animation:5s scaleAndRotateSquare infinite ease-in-out;
+        }
+        /*@keyframes scaleAndRotateSquare{
+            from{
+                transform:none;
+            }
+            to{
+                transform:rotate(1turn) scale(.5,.5);
+            }
+        }*/
+        @keyframes scaleAndRotateSquare{
+            0%{
+                transform:none;
+            }
+            50%{
+                transform:rotate(1turn) scale(.5,.5);
+                color:white;
+            }
+            100%{
+                transform:none;
+                color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">0000</div>
+</body>
+</html>
