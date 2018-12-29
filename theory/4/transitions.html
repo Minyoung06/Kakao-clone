@@ -1,0 +1,32 @@
+<!--
+    <4-2>
+    transition을 작정한 property, 혹은 all 전체에 변경효과를 줌
+    transition은 focus, active, hover에서 효과적
+    모두 같은 타이밍에 바꾸고 싶을때는 all 을 쓰자
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color:green;
+            color:white;
+            transition:all 0.5s ease-in-out;
+        }
+        .box:active{
+            background-color:red;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <span class="box">
+        Text
+    </span>
+</body>
+</html>
