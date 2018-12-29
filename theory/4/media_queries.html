@@ -1,0 +1,30 @@
+<!--
+    <4-5>
+    media queries
+    브라우저가 큰지 작은지 알아내는 방법-큰화면(ex 데스크탑)을 위한 css,작은 화면(ex 모바일환경)을 위한 css
+    ex)@media screen and (min-width:320px) and (max-width:640px){}-우리가 보는 화면이 최소값 320, 최대값 640
+    media screen에 규칙 작성하고 해당화면에 이런 css 적용하라 명령->반응형 웹 디자인(모바일-데스크탑 환경)
+    media query의 본문 안에 규칙 작성
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color:green;
+        }
+        @media screen and (min-width:320px) and (max-width:640px){
+            body{
+                background-color:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
